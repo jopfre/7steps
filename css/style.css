@@ -68,7 +68,7 @@ strong {
     font-family: 'Open Sans', serif;
     color: #fff;
     letter-spacing: 0px;
-    margin-top: 20px;
+    margin-top: 40px;
     line-height: 1;
     font-size: 52px;
 }
@@ -96,13 +96,12 @@ strong {
 
 
 .sub-title {
-  color:#03aadd;
-  font-weight: 400;
-  margin-top:5px;
-  font-family: 'Cormorant', serif;
-  font-size: 36px;
+    color: #03aadd;
+    font-weight: 400;
+    margin-top: 5px;
+    font-family: 'Cormorant Bold', serif;
+    font-size: 36px;
 }
-
 .large-text {
   font-size:28px;
 }
@@ -182,7 +181,7 @@ strong {
 .block-single {
     width: 100%;
     padding: 0px;
-    height: 300px;
+    height: 260px;
     clear: both;
     /* overflow: auto; */
 }
@@ -236,7 +235,7 @@ strong {
 }
 
 .block-title-single {
-    width: 65%;
+    width: 60%;
     float: left;
 }
 
@@ -357,7 +356,7 @@ strong {
     margin-right: auto;
     left: 37%;
     right: 0px;
-    margin-top: 73px;
+  margin-top: 28px;
     width: 83px;
     right: 0;
 }
@@ -419,6 +418,7 @@ strong {
 .readmore-wrap {
     display: block;
     float: left;
+    margin-top: 15px;
     width: 100%;
 }
 
