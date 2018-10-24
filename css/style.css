@@ -57,8 +57,9 @@ strong {
     font-weight: 700;
     font-family: 'Open Sans', serif;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-top: 20px;
+    line-height: 1;
     font-size: 52px;
 }
 
@@ -66,8 +67,9 @@ strong {
     font-weight: 700;
     font-family: 'Open Sans', serif;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-top: 20px;
+    line-height: 1;
     font-size: 52px;
 }
 
@@ -75,10 +77,23 @@ strong {
     font-weight: 700;
     font-family: 'Open Sans', serif;
     color: #fff;
-    letter-spacing: 1px;
+    letter-spacing: 0px;
     margin-top: 20px;
+    line-height: 1;
     font-size: 52px;
 }
+
+
+.block-title-top h1 {
+    font-weight: 700;
+    font-family: 'Open Sans', serif;
+    color: #fff;
+    letter-spacing: 0px;
+    margin-top: 20px;
+    line-height: 1;
+    font-size: 52px;
+}
+
 
 .sub-title {
   color:#03aadd;
@@ -221,6 +236,12 @@ strong {
   margin-right
 }
 
+.block-title-top {
+  width: 72%;
+  float:left;
+  margin-right
+}
+
 .block-title-pink {
     width: 60%;
     float: left;
@@ -311,7 +332,7 @@ strong {
 
 
 #bg-image {
-  background-image:url('../images/background-image.jpg');
+  background-image:url('/images/background-image.jpg');
   background-repeat:no-repeat;
   background-size:cover;
   padding-top:30px;
@@ -427,7 +448,7 @@ strong {
 }
 
 .owl-dots {
-    margin-top: -30px !important;
+    margin-top: -40px !important;
     z-index: 2 !important;
     left: 50% !important;
     position: absolute !important;
@@ -438,14 +459,20 @@ strong {
 }
 
 .owl-theme .owl-dots .owl-dot span {
-    width: 10px;
-    height: 10px;
+    width: 5px;
+    height: 5px;
     margin: 5px 7px;
-    background: #fff;
+    background: transparent;
+    border: 3px solid #fff;
     display: block;
     -webkit-backface-visibility: visible;
     transition: opacity .2s ease;
     border-radius: 30px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff;
+    border: 3px solid #fff;
 }
 
 .owl-carousel {
@@ -501,6 +528,27 @@ a.btn {
   margin-bottom:15px !important;
 }
 
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fff !important;
+    border: 3px solid #fff !important;
+}
+
+.owl-theme .owl-dots .owl-dot span {
+    width: 10px;
+    height: 10px;
+    margin: 5px 7px;
+    background: transparent !important;
+    display: block;
+    -webkit-backface-visibility: visible;
+    transition: opacity .2s ease;
+    border-radius: 30px;
+}
+
+#mobile {
+  display:none;
+}
+
+
 /* Fading animation */
 .fade {
   -webkit-animation-name: fade;
@@ -553,6 +601,9 @@ a.btn {
 }
 
 .block-title h1 {
+    font-size: 40px;
+}
+.block-title-top h1 {
     font-size: 40px;
 }
 
@@ -749,18 +800,13 @@ a.btn {
 }
 
 .icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 16px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 20px;
+    display: block;
+    text-align: center;
+    padding: 0px;
+    transition: all 0.3s ease;
+    color: white;
+    height: 57px;
 }
-
-.icon-bar a:hover {
-  background-color: #000;
-}
-
 .facebook {
   background: #3B5998;
 }
