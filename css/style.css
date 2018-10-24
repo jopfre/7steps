@@ -173,10 +173,10 @@ strong {
 }
 
 .block {
-  width:100%;
-  padding:0px;
-  height: 450px;
-  display:block;
+    width: 100%;
+    padding: 0px;
+    height: 375px;
+    display: block;
 }
 
 .block-single {
@@ -196,17 +196,17 @@ strong {
 }
 
 .block-full {
-  width:100%;
-  float:left;
-  height: 650px;
-  padding:0px;
+    width: 100%;
+    float: left;
+    height: 600px;
+    padding: 0px;
 }
 
 .block-half {
-  height: 325px;
-  width:100%;
-  float:left;
-  padding:0px;
+    height: 300px;
+    width: 100%;
+    float: left;
+    padding: 0px;
 }
 
 .number {
@@ -222,24 +222,27 @@ strong {
   height: 100%;
   margin-left:3%;
 }
+.half1 {
+  width:60% !important;
+}
+.half2 {
+  width:56% !important;
+}
 
 
 .block-title {
   width: 74%;
   float:left;
-  margin-right
 }
 
 .block-title-single {
-  width: 84%;
-  float:left;
-  margin-right
+    width: 65%;
+    float: left;
 }
 
 .block-title-top {
   width: 72%;
   float:left;
-  margin-right
 }
 
 .block-title-pink {
@@ -370,13 +373,13 @@ strong {
     right: 0;
 }
 
-  .plants-el {
+.plants-el {
     position: absolute;
     margin-left: auto;
     margin-right: auto;
     left: -920px;
     right: 0px;
-    margin-top: 530px;
+    margin-top: 480px;
     width: 155px;
     right: 0;
 }
@@ -414,8 +417,15 @@ strong {
 
 
 .readmore-wrap {
-  display:block;
-  float:left;
+    display: block;
+    float: left;
+    width: 100%;
+}
+
+.plusIcon {
+    display: block;
+    padding-top: 0px;
+    float: left;
 }
 /* Slider Styles */
 
@@ -512,7 +522,7 @@ strong {
 
 .btn {
   background:#eb1e5f;
-  border:1px solid #fff;
+  border:2px solid #fff;
   padding:10px;
   text-align:left;
   display:block;
@@ -637,14 +647,6 @@ a.btn {
   margin-left:0px !important;
 }
 
-#mobile {
-  display:block;
-}
-
-#desktop {
-  display:none !important;
-}
-
 .plants-el {
     display:none;
 }
@@ -674,7 +676,25 @@ a.btn {
 }
 }
 
+@media only screen and (max-width:768px) {
+#mobile {
+  display:block;
+}
+
+#desktop {
+  display:none !important;
+}
+}
+
+@media screen and (min-width: 600px)  {
+        .mobile-break { display: none; }
+    }
+
 @media only screen and (max-width:680px) {
+
+  .contact span {
+    padding-left:0px !important;
+  }
   .col-2 {
     width:100%;
   }
@@ -754,10 +774,11 @@ a.btn {
     margin-bottom:10px !important;
 }
 .readmore-wrap {
-    margin: auto !important;
     float: none !important;
-    margin-bottom: 30px !important;
-    width: 55% !important;
+    padding-bottom: 30px !important;
+    width: 75% !important;
+    height: 30px;
+    padding-top:10px !important;
 }
 .readmore {
   margin: auto !important;
